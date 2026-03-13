@@ -26,63 +26,35 @@ const NAV_ITEMS = ["work", "experience", "contact"]
 
 const PROJECTS: Project[] = [
   {
-    title: "Neural Network Builder",
+    title: "Crewlytics",
     description:
-      "Drag-and-drop interface for designing and training neural networks in the browser with real-time training visualization via WebSockets.",
-    tags: ["React", "Flask", "TensorFlow", "WebSockets"],
-    href: "https://github.com/aryamangoenka",
+      "ML powered workload management system that predicts employee overload risk and automatically redistributes tasks based on availability and skills.",
+    tags: ["Next.js", "TypeScript", "FastAPI", "PostgreSQL", "scikit-learn"],
+    href: "https://github.com/khuzaymaa918",
   },
   {
-    title: "Modelic",
+    title: "Bank Loan Approval Predictor",
     description:
-      "ML deployment and monitoring platform with automated drift detection using PSI and KL-Divergence. 30s deployment latency.",
-    tags: ["FastAPI", "Celery", "Supabase", "GitHub Actions"],
-    href: "https://github.com/aryamangoenka",
-  },
-  {
-    title: "The Inbox Guard",
-    description:
-      "Email deliverability platform with automated SPF/DMARC/DKIM configuration, reducing DNS setup time by 70%. 99.9% uptime for 150M+ emails.",
-    tags: ["FastAPI", "Next.js", "Cloudflare", "PostgreSQL"],
-    href: "https://github.com/aryamangoenka",
+      "Machine learning web application predicting loan approval using a preprocessing pipeline and logistic regression model deployed through Streamlit.",
+    tags: ["Python", "Pandas", "scikit-learn", "Streamlit"],
+    href: "https://github.com/khuzaymaa918",
   },
 ]
 
 const EXPERIENCES: Experience[] = [
   {
-    company: "ASAPP",
-    role: "AI Engineering Intern",
-    period: "Sep — Dec 2025",
-    description:
-      "Built Extractify, an agentic NLP system for structured data extraction from customer conversations. Processed 10K+ multi-turn dialogues with 95–100% accuracy using LangGraph and Gemini 2.5 Flash.",
-  },
-  {
-    company: "Paktolus",
-    role: "Software Engineer Intern",
-    period: "May — Jul 2025",
-    description:
-      "Architected a full-stack user management system with Django REST, FastAPI, and Next.js. Integrated JWT auth with account lockout protection. 80%+ test coverage.",
-  },
-  {
-    company: "MIT Breakthrough Tech",
-    role: "AI Fellow",
-    period: "Apr 2025 — Present",
-    description:
-      "Selected for a competitive, fully-funded AI/ML program focused on hands-on training and real-world industry projects.",
-  },
-  {
-    company: "UMass Amherst",
-    role: "Research Assistant",
+    company: "University of Massachusetts Amherst",
+    role: "Undergraduate Teaching Assistant — Calculus I & II",
     period: "Sep 2025 — Present",
     description:
-      "Evaluating AI systems for evidence-based dietary guidance at the ML for Education Lab. Contributing to data analysis and conference submissions.",
+      "Lead review sessions and coordinate grading rubrics across multiple course sections, helping improve exam readiness for 300+ students.",
   },
   {
-    company: "MassAI",
-    role: "Project Lead",
-    period: "Feb 2025 — Present",
+    company: "The Game Storm Studios",
+    role: "Game Developer Intern",
+    period: "Jun 2025 — Aug 2025",
     description:
-      "Leading a team of 5+ students building semester-long AI projects. Mentoring in model development and Git-based collaboration.",
+      "Built scalable gameplay systems in Unity using C# and improved platform performance and debugging processes across cross-platform builds.",
   },
 ]
 
@@ -330,7 +302,7 @@ export default function Portfolio() {
           href="#"
           className="text-sm font-medium tracking-[0.2em] text-[#e5e5e5] hover:text-white transition-colors duration-300"
         >
-          AG
+          KM
         </a>
 
         <div className="hidden md:flex items-center gap-10">
@@ -409,7 +381,7 @@ export default function Portfolio() {
             transition={{ delay: 0.5, duration: 1, ease: [0.25, 0.1, 0, 1] }}
             className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-[-0.03em] leading-[0.95]"
           >
-            Aryaman Goenka
+            Khuzayma Mushtaq
           </motion.h1>
 
           <motion.p
@@ -418,8 +390,8 @@ export default function Portfolio() {
             transition={{ delay: 0.9, duration: 0.8 }}
             className="text-[17px] md:text-lg text-[#666] mt-8 max-w-lg mx-auto leading-relaxed"
           >
-            Building intelligent systems at the intersection of
-            software engineering and machine learning.
+            Building scalable software & intelligent systems
+            that is clean, measurable, and efficient.
           </motion.p>
 
           <motion.div
@@ -430,17 +402,17 @@ export default function Portfolio() {
           >
             {[
               {
-                href: "https://github.com/aryamangoenka",
+                href: "https://github.com/khuzaymaa918",
                 icon: Github,
                 label: "GitHub",
               },
               {
-                href: "https://linkedin.com/in/aryaman-goenka",
+                href: "https://linkedin.com/in/khuzayma-mushtaq",
                 icon: Linkedin,
                 label: "LinkedIn",
               },
               {
-                href: "mailto:aryamansgoenka@gmail.com",
+                href: "mailto:khuzaymamushtaq1994@gmail.com",
                 icon: Mail,
                 label: "Email",
               },
